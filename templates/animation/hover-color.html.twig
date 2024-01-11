@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block importmap %}
+    {{ importmap(['app', 'box', 'animation-hover-color']) }}
+{% endblock %}
+
+{% block body %}
+    <h1>Changement de couleur au survol</h1>
+
+    <div class="box"></div>
+{% endblock %}

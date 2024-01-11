@@ -1,0 +1,5 @@
+{
+    "scripts": {
+        "build": "php bin/console typescript:build --watch & php bin/console sass:build --watch"
+    }
+}

@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block importmap %}
+    {{ importmap(['app', 'animation-click-color']) }}
+{% endblock %}
+
+{% block body %}
+    <h1>Changement de couleur au clic</h1>
+
+    <div class="box"></div>
+{% endblock %}

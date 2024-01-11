@@ -1,1 +1,33 @@
 {% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Nos animations</h1>
+
+    <section class="container">
+        <div class="row">
+            <div class="col">
+                <article class="card">
+                    <a href="{{ path('animation_hover_color') }}">
+                        Changement de couleur au survol
+                    </a>
+                </article>
+            </div>
+
+            <div class="col">
+                <article class="card">
+                    <a href="{{ path('animation_click_color') }}">
+                        Changement de couleur au clic
+                    </a>
+                </article>
+            </div>
+
+            <div class="col">
+                <article class="card">
+                    <a href="{{ path('animation_click_size') }}">
+                        Changement de taille au clic
+                    </a>
+                </article>
+            </div>
+        </div>
+    </section>
+{% endblock %}
